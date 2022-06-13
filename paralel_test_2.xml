@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="paralel test 2" parallel="classes" thread-count="5">
+    <test name="Classes Paralel">
+        <classes>
+            <class name="com.infoTech.tests.AmazonTest"></class>
+            <class name="com.infoTech.tests.GoogleTest"></class>
+            <class name="com.infoTech.excelautomation.ReadExcel"></class>
+            <class name="com.infoTech.smokeTests.GcreddyTests"></class>
+
+        </classes>
+    </test>
+</suite>
