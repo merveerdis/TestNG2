@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class newGooglePage {
+public class GoogleAramaPage {
     //Bos bir webdriver degiskeni olusturuyoruz
     WebDriver driver;
 
     //Constructor olusturuyoruz ,1 tane parametresi var
-    public newGooglePage(WebDriver driver) {
+    public GoogleAramaPage() {
         /*
         parametre olarak gelen driver nesnesini bu class'ta olusturdugumuz driver nesnemize esitledik.
         Bu sekilde yeniden bos bir driver olusturmak yerine zaten halihazirdaki kullandigimiz driver'i bu
@@ -23,7 +23,7 @@ public class newGooglePage {
     }
 
     @FindBy(xpath = "//*[.='Ich stimme zu']")
-    public WebElement guvenlikDuvari;
+    public WebElement googleGuvenlik;
     @FindBy(name = "q")
     public WebElement aramaKutusu;
     @FindBy(tagName = "a")
